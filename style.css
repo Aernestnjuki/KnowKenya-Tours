@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+
+a{
+    text-decoration: none;
+}
+
+/* reusable codes*/
+  .font-baloo {
+    font-family: "Baloo Thambi 2", cursive;
+  }
+  
+  .font-rale {
+    font-family: "Raleway", cursive;
+  }
+  
+  .font-rubik {
+    font-family: "Rubik", cursive;
+  }
+  
+  .font-size-12 {
+    font-size: 12px;
+  }
+  
+  .font-size-14 {
+    font-size: 14px;
+  }
+  
+  .font-size-16 {
+    font-size: 16px;
+  }
+  
+  .font-size-20 {
+    font-size: 20px;
+  }
+
+  .color-brown{
+      color: #8B4513;
+  }
+  .color-green{
+      color: #2E8B57;
+  }
+  .color-black{
+      color: #000000;
+  }
+  .color-red{
+      color: #DC143C;
+  }
+  .color-white{
+      color: #fff;
+  }
+  .color-brown-bg{
+      background: #8B4513;
+  }
+  .color-green-bg{
+    background: #2E8B57;
+  }
+  .color-black-bg{
+    background: #000000;
+  }
+  .color-red-bg{
+    background: #DC143C;
+  }
+  
+  /* end of reusable codes*/
+
+  .navbar{
+    z-index: 20;
+  }
+
+  .navbar a.navbar-brand img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+  }
+
+  .icons a i{
+      color: blue;
+  }
+
+  #main-section{
+    height: auto;
+  }
+
+  /* landing section */
+  .landing-section{
+    position: relative;
+  }
+
+  .landing-section .owl-carousel .owl-nav button{
+    position: absolute;
+    top: 40%;
+    outline: none;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .landing-section .owl-carousel .owl-nav button.owl-prev{
+    left: 20px;
+  }
+
+  .landing-section .owl-carousel .owl-nav button.owl-next{
+    right: 20px;
+  }
+
+  .landing-section .owl-carousel .owl-nav button.owl-prev span,
+  .landing-section .owl-carousel .owl-nav button.owl-next span {
+    padding: 0 1rem;
+  }
+
+  .landing-section .item img{
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .landing-section .wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 30px;
+  }
+
+  .landing-section .wrapper h3{
+    font-weight: 900;
+    font-size: 35px;
+    color: #fff;
+    opacity: 23;
+  }
+
+  .landing-section a{
+    text-decoration: none;
+    padding: 20px 35px;
+    list-style: 1px;
+    line-height: 1px;
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    color: #8B4513;
+    font-size: 20px;
+  }
+
+  /* featured section */
+  .featured-section .card img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .featured-section .card .card-body .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-30%, -40%);
+    -ms-transform: translate(-30%, -40%);
+    text-align: center;
+  }
+  
+  .featured-section .card:hover img{
+    opacity: 0.5;
+  }
+  
+  .featured-section .card:hover .card-body .middle {
+    opacity: 1;
+  }
+
+  .featured-section .card:hover .card-body .card-text{
+    color: #DC143C;
+  }
+
+  /* contact section */
+  .contact-section{
+    position: relative;
+  }
+  .contact-section img{
+    height: 70vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+  .contact-section .contact-info{
+    position: absolute;
+    top: 30%;
+    font-size: 50px;
+    background: #fff;
+    padding: 15px 15px;
+    opacity: 0.7;
+    font-weight: 900;
+  }
+  .contact-section button{
+    position: absolute;
+    top: 60%;
+    line-height: 1px;
+    letter-spacing: 1px;
+    padding: 20px 30px;
+    font-size: 22px;
+  }
+
+  /* blog section */
+  .blog-section .card{
+    transition: .05s;
+  }
+
+  .blog-section .card:hover{
+    transform: translateY(10px);
+    transition: .5s;
+  }
+
+  .blog-section .card:hover .card-body h4{
+    color: #8B4513;
+    transition: .5s;
+    font-weight: bold;
+  }
+
+  /* footer */
+  #footer-section{
+    height: auto;
+  }
+
+  .footer-content{
+    height: auto;
+    background: #b44d03;
+  }
+
+  .footer-content li{
+    transition: .5s;
+  }
+
+  .footer-content li:hover{
+    transition: .5s;
+    margin-right: 15px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .footer-content li a{
+    color: #000000;
+  }
+
+  .footer-bottom{
+    height: 50px;
+    background: #00632b;
+  }
+
+
+  
+@media only screen and (max-width: 767px){
+  .landing-section .wrapper h3{
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  .footer-bottom{
+    font-size: 12px;
+  }
+
+}
+
